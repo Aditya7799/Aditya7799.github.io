@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import NavBar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo.png";
+import logo from "../Assets/logo.svg";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
@@ -54,10 +54,6 @@ function NavBarComponent() {
                         updateExpandedState(isExpanded ? false : "expanded");
                     }}
                 >
-                    <span></span>
-                    <span></span>
-                    <span></span>
-
                 </NavBar.Toggle>
                 
                 <NavBar.Collapse id = "responsive-navbar-nav">
@@ -65,6 +61,26 @@ function NavBarComponent() {
                         <Nav.Item>
                             <Nav.Link as={Link} to="/" onClick={()=> updateExpandedState(false)}>
                                 <AiOutlineHome style={{marginBottom: "2px"}} /> Home
+                            </Nav.Link>
+                        </Nav.Item>
+
+                        <Nav.Item>
+                            <Nav.Link
+                                as={Link}
+                                to="/about"
+                                onClick={() => updateExpandedState(false)}
+                            >
+                                <AiOutlineUser style={{ marginBottom: "2px" }}/>About
+                            </Nav.Link>
+                        </Nav.Item>
+
+                        <Nav.Item>
+                            <Nav.Link
+                                as={Link}
+                                to="/resume"
+                                onClick={() => updateExpandedState(false)}
+                            >
+                                <CgFileDocument style={{ marginBottom: "2px" }} /> Experience
                             </Nav.Link>
                         </Nav.Item>
 
@@ -81,23 +97,13 @@ function NavBarComponent() {
                             </Nav.Link>
                         </Nav.Item>
 
-                        <Nav.Item>
-                            <Nav.Link
-                                as={Link}
-                                to="/resume"
-                                onClick={() => updateExpandedState(false)}
-                            >
-                                <CgFileDocument style={{ marginBottom: "2px" }} /> Experience
-                            </Nav.Link>
-                        </Nav.Item>
-
 
                         <Nav.Item>
                             <Nav.Link
                                 as={Link}
-                                to="/Tab1"
+                                to="/Blog"
                                 onClick={() => updateExpandedState(false)}>
-                                <AiOutlineUser style={{ marginBottom: "2px" }} /> Sample1-Tab
+                                <AiOutlineUser style={{ marginBottom: "2px" }} /> Blog
                             </Nav.Link>
                         </Nav.Item>
 

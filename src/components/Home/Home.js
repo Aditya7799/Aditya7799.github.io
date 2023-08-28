@@ -8,29 +8,44 @@ import {
   AiFillInstagram,
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar.png";
+import myImg2 from "../../Assets/avatar.jpeg";
+import ShootingStar from "../../Assets/AnimationComponents/ShootingStar/ShootingStar";
+import TypeWriterComponent from "./TypeWriterComponent"
 
 import { FIRST_NAME, LAST_NAME, HOME_INTRO, HOME_INTRODUCTION_1, HOME_INTRODUCTION_2, GITHUB_PROFILE_URL, LINKEDIN_PROFILE_URL, INSTAGRAM_PROFILE_URL } from "../../constants";
 
 function Home() {
     return (
     <section>
+      <div className="home-animation"><ShootingStar/></div>
       <Container fluid className="home-section" id="home">
         <Container className="home-content">
+        <Row>
+        <Col className="myAvtar">
+            <Tilt>
+              <img src={myImg2} className="img-fluid avatar-img" alt="avatar"/>
+            </Tilt>
+          </Col>
+        </Row>
           <Row>
-            <Col md={7} className="home-header">
+            <Col className="home-header ">
               <h1 style={{ paddingBottom: 15 }} className="heading">{HOME_INTRO} </h1>
 
               <h1 className="heading-name">
                 I am
-                <strong className="main-name"> {FIRST_NAME} {LAST_NAME} </strong>
+                <strong className="main-name"> {FIRST_NAME} {LAST_NAME} </strong> <span className="wave" role="img" aria-labelledby="wave">👋🏻</span>
               </h1>
+              
             </Col>
           </Row>
+          <Container  className="typewriter-content">
+          <TypeWriterComponent/>
+          </Container>
+           
         </Container>
 
-        <Container fluid className="home-about-section" id="about">
-      <Container>
+      <Container fluid className="home-about-section" id="about">
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
@@ -51,7 +66,7 @@ function Home() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>FIND ME ON</h1>
+            <h1>FIND ME ON!</h1>
             <p>
               Feel free to <span className="purple">connect </span>with me
             </p>
@@ -90,9 +105,6 @@ function Home() {
           </Col>
         </Row>
       </Container>
-    </Container>
-
-
       </Container>
     </section>
     );

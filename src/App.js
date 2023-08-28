@@ -12,6 +12,7 @@ import Spinner from "./components/spinner";
 import NavBarComponent from "./components/NavBarComponent";
 import Home from "./components/Home/Home";
 import Tab1 from "./components/Tab1/Tab1";
+import About from "./components/About/About";
 
 function App() {
 
@@ -36,6 +37,7 @@ function App() {
         <NewPage />
         <Routes>
           <Route path ="/" element={<Home/>}/>
+          <Route path ="/about" element={<About/>}/>
           {/*This is a sample Tab. Other Tabs could go below this - Projects/Experience/Certifications/Contact/Blog etc*/}
           <Route path = "/Tab1" element={<Tab1/>}/>
         </Routes>
