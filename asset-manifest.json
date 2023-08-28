@@ -1,20 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.93d7ef06.css",
-    "main.js": "/static/js/main.a45260c7.js",
+    "main.css": "/static/css/main.4baf00ec.css",
+    "main.js": "/static/js/main.ca366dc5.js",
     "static/js/787.5fec769a.chunk.js": "/static/js/787.5fec769a.chunk.js",
-    "static/media/logo.png": "/static/media/logo.3a38640b6e0c718bf3bc.png",
     "static/media/avatar.png": "/static/media/avatar.60c29a173b61ed66b9b8.png",
     "static/media/avatar.jpeg": "/static/media/avatar.f4ba256eb7af7beeac08.jpeg",
+    "static/media/coursera.png": "/static/media/coursera.c33d20b80318c840c248.png",
+    "static/media/capgemini.jpg": "/static/media/capgemini.e111e789971801e4e054.jpg",
+    "static/media/logo.svg": "/static/media/logo.41c201175f705ece2c7f0ad98ff813b5.svg",
     "static/media/puff.svg": "/static/media/puff.be69e7a9d85109e7dfa9.svg",
     "static/media/audio.svg": "/static/media/audio.3b1cd6a34d162d72dd53.svg",
     "index.html": "/index.html",
-    "main.93d7ef06.css.map": "/static/css/main.93d7ef06.css.map",
-    "main.a45260c7.js.map": "/static/js/main.a45260c7.js.map",
+    "main.4baf00ec.css.map": "/static/css/main.4baf00ec.css.map",
+    "main.ca366dc5.js.map": "/static/js/main.ca366dc5.js.map",
     "787.5fec769a.chunk.js.map": "/static/js/787.5fec769a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93d7ef06.css",
-    "static/js/main.a45260c7.js"
+    "static/css/main.4baf00ec.css",
+    "static/js/main.ca366dc5.js"
   ]
 }
