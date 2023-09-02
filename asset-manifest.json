@@ -1,22 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.4baf00ec.css",
-    "main.js": "/static/js/main.ca366dc5.js",
+    "main.css": "/static/css/main.828cfbda.css",
+    "main.js": "/static/js/main.9237a6b1.js",
     "static/js/787.5fec769a.chunk.js": "/static/js/787.5fec769a.chunk.js",
     "static/media/avatar.png": "/static/media/avatar.60c29a173b61ed66b9b8.png",
+    "static/media/about_img.svg": "/static/media/about_img.1f92353de0c0e5bf5e2ceff812381c4d.svg",
     "static/media/avatar.jpeg": "/static/media/avatar.f4ba256eb7af7beeac08.jpeg",
+    "static/media/resume.pdf": "/static/media/resume.0ae40c7d6b79b7a320cb.pdf",
     "static/media/coursera.png": "/static/media/coursera.c33d20b80318c840c248.png",
     "static/media/capgemini.jpg": "/static/media/capgemini.e111e789971801e4e054.jpg",
     "static/media/logo.svg": "/static/media/logo.41c201175f705ece2c7f0ad98ff813b5.svg",
     "static/media/puff.svg": "/static/media/puff.be69e7a9d85109e7dfa9.svg",
     "static/media/audio.svg": "/static/media/audio.3b1cd6a34d162d72dd53.svg",
     "index.html": "/index.html",
-    "main.4baf00ec.css.map": "/static/css/main.4baf00ec.css.map",
-    "main.ca366dc5.js.map": "/static/js/main.ca366dc5.js.map",
+    "main.828cfbda.css.map": "/static/css/main.828cfbda.css.map",
+    "main.9237a6b1.js.map": "/static/js/main.9237a6b1.js.map",
     "787.5fec769a.chunk.js.map": "/static/js/787.5fec769a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4baf00ec.css",
-    "static/js/main.ca366dc5.js"
+    "static/css/main.828cfbda.css",
+    "static/js/main.9237a6b1.js"
   ]
 }
