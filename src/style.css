@@ -53,7 +53,7 @@ html {
     --navBar_logo_width:2.0em;
     /*NavBar - Logo*/
     --navBar_link_color:white;
-    --navBar_link_padding:3.5rem;
+    --navBar_link_padding:3.4rem;
 
 
     
@@ -62,7 +62,7 @@ html {
   
   body {
     background: radial-gradient(circle at bottom, #1b2735 0%, #090a0f 100%);
-    height: 100vh;
+    /* height: 100%; */
     /* overflow: hidden; */
     /* display: flex; */
     justify-content: center;
@@ -70,20 +70,22 @@ html {
     /* background-repeat: no-repeat; */
   }
 
-  .home-animation {
+  /* .home-animation {
     width: 100%;
+  } */
+
+  .experience-icons {
+    max-width:35px !important;
+    max-height: 35px !important;
+    height: auto;
+    width:40px;
+    border-radius: 50%;
   }
 
-  .navbar-toggler span {
-    display: block !important;
-    background-color: var(--navbar_toggler_color) !important;
-    height: 5px !important;
-    width: 27px !important;
-    margin-top: 5px !important;
-    margin-bottom: 5px !important;
-    transform: rotate(0deg) !important;
-    left: 0 !important;
-    opacity: 1 !important;
+  .experience-component {
+    /* TODO : Actually center this div */
+    margin-top: 14%;
+
   }
 
   .avatar-img{
@@ -99,29 +101,57 @@ html {
       border-radius: 50%;
     }
   }
-  
-  .navbar-nav .nav-item a::after {
-    content: "";
+
+  /* Resume Section */
+  .resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
     position: relative;
-    display: block;
-    height: var(--navbar_hover_animation_bar_height);
-    width: 0;
-    border-radius: 12px;
-    background: var(--navbar_hover_animation_color);
-    bottom: 1px;
-    left: 0;
-    z-index: -1;
-    transition: all var(--navbar_hover_animation_speed) ease-out 0s;
+    /* margin-left: 40%; */
   }
+
+  #ResumeContainer {
+    margin:auto;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PDFDocument {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.PDFPage {
+    box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+}
+
+.PDFPageOne {
+    margin-bottom: 25px;
+}
+
+.PDFPage > canvas {
+    max-width: 100%;
+    height: auto !important;
+}
   
-  .navbar-nav .nav-item a:hover::after {
-    width: 100%;
-  }
 
   .logo {
     height: var(--navBar_logo_height) !important;
     width: var(--navBar_logo_width) !important;
   }
+
+  .translucent {
+    background-color: var(--navbar_translucent_color) !important;
+    transition: all 0.3s ease-out 0s !important;
+    box-shadow: 0px 10px 10px 0px rgba(5, 29, 10, 0.171) !important;
+    backdrop-filter: blur(15px) !important;
+  }
+
   
   .navbar{
     position: fixed !important;
@@ -129,12 +159,24 @@ html {
     padding: 0.3rem 2rem !important;
     font-size: 1.2rem !important;
   }
-  
+
   .navbar-toggler {
     padding: 0.25rem 1.5rem !important;
     position: relative !important;
     background-color: transparent !important;
     border-color: transparent !important;
+  }
+
+  .navbar-toggler span {
+    display: block !important;
+    background-color: var(--navbar_toggler_color) !important;
+    height: 5px !important;
+    width: 27px !important;
+    margin-top: 5px !important;
+    margin-bottom: 5px !important;
+    transform: rotate(0deg) !important;
+    left: 0 !important;
+    opacity: 1 !important;
   }
   
   .navbar-toggler:focus,
@@ -170,6 +212,25 @@ html {
     opacity: 0.9 !important;
   }
   
+  .navbar-nav .nav-item a::after {
+    content: "";
+    position: relative;
+    display: block;
+    height: var(--navbar_hover_animation_bar_height);
+    width: 0;
+    border-radius: 12px;
+    background: var(--navbar_hover_animation_color);
+    bottom: 1px;
+    left: 0;
+    z-index: -1;
+    transition: all var(--navbar_hover_animation_speed) ease-out 0s;
+  }
+  
+  .navbar-nav .nav-item a:hover::after {
+    width: 100%;
+  }
+  
+  
 
   .navbar-brand {
     color: rgb(250, 250, 250) !important;
@@ -179,12 +240,14 @@ html {
   
   .navbar-nav .nav-link {
     color: var(--navBar_link_color) !important;
-    padding-right: var(--navBar_link_padding) !important;
-    padding-left: var(--navBar_link_padding)!important;
+    /* padding-right: var(--navBar_link_padding) !important;
+    padding-left: var(--navBar_link_padding)!important; */
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
   }
   
   .nav-link {
-    padding: 0.8rem 1.8rem !important;
+    padding: 0.8rem 1rem !important;
   }
   
   @media (max-width: 767px) {
@@ -257,13 +320,6 @@ html {
     background: var(--scrollbar_handle_color_onHover);
     border-radius: 12px;
   }
-  
-  .translucent {
-    background-color: var(--navbar_translucent_color) !important;
-    transition: all 0.3s ease-out 0s !important;
-    box-shadow: 0px 10px 10px 0px rgba(5, 29, 10, 0.171) !important;
-    backdrop-filter: blur(15px) !important;
-  }
 
 
   .wave {
@@ -313,13 +369,12 @@ html {
   }
   
   .home-section {
-    position: absolute;
     z-index: -1;
-    /* background-image: var(--image-gradient), url(./Assets/home-bg-1.jpg); */
     background-position: top center;
-    background-repeat: no-repeat;
     padding-bottom: 180px !important;
     padding-top: 30px !important;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
   }
   
   .home-content {
@@ -327,6 +382,10 @@ html {
     color: whitesmoke;
     justify-content: center;
     align-items: center;
+  }
+
+  .home-text {
+    font-size:larger;
   }
 
   .typewriter-content {

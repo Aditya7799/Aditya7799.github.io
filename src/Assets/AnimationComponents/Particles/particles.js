@@ -1,5 +1,19 @@
 // modified version of random-normal
-function normalPool(o){var r=0;do{var a=Math.round(normal({mean:o.mean,dev:o.dev}));if(a<o.pool.length&&a>=0)return o.pool[a];r++}while(r<100)}function randomNormal(o){if(o=Object.assign({mean:0,dev:1,pool:[]},o),Array.isArray(o.pool)&&o.pool.length>0)return normalPool(o);var r,a,n,e,l=o.mean,t=o.dev;do{r=(a=2*Math.random()-1)*a+(n=2*Math.random()-1)*n}while(r>=1);return e=a*Math.sqrt(-2*Math.log(r)/r),t*e+l}
+function normalPool(o){
+  var r=0;
+  do{
+    var a=Math.round(normal({mean:o.mean,dev:o.dev}));
+    if(a<o.pool.length&&a>=0)
+    return o.pool[a];r++
+    } while(r<100)
+  }
+function randomNormal(o){
+  if(o=Object.assign({mean:0,dev:1,pool:[]},o),Array.isArray(o.pool)&&o.pool.length>0)
+  return normalPool(o);
+  var r,a,n,e,l=o.mean,t=o.dev;
+  do{r=(a=2*Math.random()-1)*a+(n=2*Math.random()-1)*n}while(r>=1);
+  return e=a*Math.sqrt(-2*Math.log(r)/r),t*e+l
+}
 
 const NUM_PARTICLES = 600;
 const PARTICLE_SIZE = 0.5; // View heights
@@ -9,6 +23,14 @@ let particles = [];
 
 function rand(low, high) {
   return Math.random() * (high - low) + low;
+}
+
+function normal({ mean = 0, dev = 1 } = {}) {
+  let u = 0, v = 0;
+  while (u === 0) u = Math.random(); // Converting [0,1) to (0,1)
+  while (v === 0) v = Math.random();
+  const z0 = Math.sqrt(-2.0 * Math.log(u)) * Math.cos(2.0 * Math.PI * v);
+  return z0 * dev + mean;
 }
 
 function createParticle(canvas) {

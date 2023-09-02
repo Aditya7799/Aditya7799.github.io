@@ -15,11 +15,11 @@
   }
   
   .accordion-icon {
-    transition: transform 0.6s;
+    transition: transform 0.3s;
   }
   
   .accordion-icon.open {
-    transform: rotate(360deg);
+    transform: rotate(180deg);
   }
   
   .accordion-content {

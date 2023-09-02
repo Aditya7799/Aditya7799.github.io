@@ -13,9 +13,12 @@ import NavBarComponent from "./components/NavBarComponent";
 import Home from "./components/Home/Home";
 import Tab1 from "./components/Tab1/Tab1";
 import About from "./components/About/About";
+import Experience from "./components/Experience/Experience";
+import Resume from "./components/Resume";
+import FooterBar from "./components/FooterBar";
 
 function App() {
-
+  <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'></link>
   //Initializing [[scrollable]] variable to true. We control scrolling behaviour through this variable
   const [scrollable, setScrollable] = useState(false);
   // We set the id of the parent div to scroll after the below mentioned timeout.
@@ -39,9 +42,11 @@ function App() {
           <Route path ="/" element={<Home/>}/>
           <Route path ="/about" element={<About/>}/>
           {/*This is a sample Tab. Other Tabs could go below this - Projects/Experience/Certifications/Contact/Blog etc*/}
-          <Route path = "/Tab1" element={<Tab1/>}/>
+          <Route path ="/experience" element={<Experience/>}/>
+          <Route path ="/resume" element={<Resume/>}/>
         </Routes>
       </div>
+      <FooterBar/>
     </Router>
   );
 }

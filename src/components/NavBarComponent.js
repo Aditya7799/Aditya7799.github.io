@@ -6,7 +6,6 @@ import logo from "../Assets/logo.svg";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -14,9 +13,14 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 
-import { CgFileDocument } from "react-icons/cg";
+import {
+    PiBagFill,
+    PiSuitcaseSimple,
+    PiSuitcaseSimpleFill,
+    PiSuitcaseSimpleDuotone
+} from "react-icons/pi"
 
-import { GITHUB_PROFILE_URL, LINKEDIN_PROFILE_URL } from "../constants";
+import { CgFileDocument } from "react-icons/cg";
 
 function NavBarComponent() {
     // This is used to save the current state of the NavBar - expanded vs NotExpanded
@@ -47,17 +51,21 @@ function NavBarComponent() {
                     <img src = {logo} className="img-fluid logo" alt = "brand" />
                 </NavBar.Brand>
                 
-                {/* NavBar Expanded State variable is updated on click */}
+                {/* [Mobile Only] NavBar Expanded State variable is updated on click. Each span inside defines a bar on the NavBar toggler*/}
                 <NavBar.Toggle 
                     aria-controls = "responsive-navbar-nav"
                     onClick={() => {
                         updateExpandedState(isExpanded ? false : "expanded");
                     }}
                 >
+                <span></span>
+                <span></span>
+                <span></span>
                 </NavBar.Toggle>
+
                 
                 <NavBar.Collapse id = "responsive-navbar-nav">
-                    <Nav className="ml-auto" defaultActiveKey="#home">
+                    <Nav className="ms-auto" defaultActiveKey="#home">
                         <Nav.Item>
                             <Nav.Link as={Link} to="/" onClick={()=> updateExpandedState(false)}>
                                 <AiOutlineHome style={{marginBottom: "2px"}} /> Home
@@ -77,10 +85,10 @@ function NavBarComponent() {
                         <Nav.Item>
                             <Nav.Link
                                 as={Link}
-                                to="/resume"
+                                to="/experience"
                                 onClick={() => updateExpandedState(false)}
                             >
-                                <CgFileDocument style={{ marginBottom: "2px" }} /> Experience
+                                <PiSuitcaseSimpleDuotone style={{ marginBottom: "2px" }}/> Experience
                             </Nav.Link>
                         </Nav.Item>
 
@@ -97,13 +105,23 @@ function NavBarComponent() {
                             </Nav.Link>
                         </Nav.Item>
 
-
+{/* 
                         <Nav.Item>
                             <Nav.Link
                                 as={Link}
                                 to="/Blog"
                                 onClick={() => updateExpandedState(false)}>
                                 <AiOutlineUser style={{ marginBottom: "2px" }} /> Blog
+                            </Nav.Link>
+                        </Nav.Item> */}
+
+                        <Nav.Item>
+                            <Nav.Link
+                                as={Link}
+                                to="/resume"
+                                onClick={() => updateExpandedState(false)}
+                            >
+                            <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
                             </Nav.Link>
                         </Nav.Item>
 

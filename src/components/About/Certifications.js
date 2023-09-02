@@ -40,7 +40,7 @@ function Certifications() {
             certificates.map((object,index) => {
                 return(
                     <SwiperSlide>
-                    <Card style={{ width: '18rem' }} border='secondary'>
+                    <Card style={{ width: '18rem'}} border='secondary' className='certifications-card'>
                     <Card.Img variant="top" src={coursera} />
                      <Card.Body>
                     <Card.Title>{object.course_name}</Card.Title>

@@ -1,14 +1,24 @@
 // Generic constants
 export const GITHUB_PROFILE_URL = "https://github.com/Aditya7799"
-export const LINKEDIN_PROFILE_URL = "https://linkedin.com/aditya-dalvi"
-export const INSTAGRAM_PROFILE_URL = "https://linkedin.com/aditya-dalvi"
+export const LINKEDIN_PROFILE_URL = "https://www.linkedin.com/in/aditya-dalvi/"
+export const INSTAGRAM_PROFILE_URL = "https://www.linkedin.com/in/aditya-dalvi/"
+export const GOODREADS_PROFILE_URL ="https://www.goodreads.com/user/show/160395128-aditya-dalvi"
 export const FIRST_NAME = "Aditya"
 export const LAST_NAME = "Dalvi"
 
 // Home Page Related Constants
 export const HOME_INTRO = "Hi There!"
-export const HOME_INTRODUCTION_1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Pellentesque habitant morbi tristique senectus et netus. Tristique magna sit amet purus. Ullamcorper malesuada proin libero nunc consequat interdum varius sit amet. Posuere sollicitudin aliquam ultrices sagittis orci a scelerisque purus semper. Enim ut tellus elementum sagittis vitae et leo. Malesuada fames ac turpis egestas integer eget aliquet nibh praesent. Purus faucibus ornare suspendisse sed nisi lacus sed viverra tellus. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Feugiat scelerisque varius morbi enim nunc faucibus a. Enim neque volutpat ac tincidunt vitae semper. Purus faucibus ornare suspendisse sed nisi lacus sed viverra. Consequat interdum varius sit amet. Faucibus purus in massa tempor nec feugiat nisl pretium. Fermentum et sollicitudin ac orci phasellus egestas tellus."
-export const HOME_INTRODUCTION_2 = "Adipiscing elit duis tristique sollicitudin nibh. Nullam ac tortor vitae purus faucibus ornare suspendisse sed. Interdum varius sit amet mattis vulputate enim nulla aliquet porttitor. Leo duis ut diam quam nulla. Duis tristique sollicitudin nibh sit amet commodo nulla facilisi nullam. Lacus luctus accumsan tortor posuere ac. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer. Quam vulputate dignissim suspendisse in est. Viverra suspendisse potenti nullam ac tortor vitae purus faucibus. Ac orci phasellus egestas tellus rutrum tellus pellentesque eu. Nunc consequat interdum varius sit amet. Nulla porttitor massa id neque aliquam vestibulum. Dolor sed viverra ipsum nunc aliquet bibendum. At volutpat diam ut venenatis tellus in metus vulputate. Tellus elementum sagittis vitae et. Et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut. Urna duis convallis convallis tellus id interdum velit. Sit amet tellus cras adipiscing enim eu turpis. Blandit libero volutpat sed cras ornare arcu dui vivamus."
+
+export const HOME_INTRODUCTION_1 = <p className="home-about-body">
+    Welcome to my website! I'm a <b>computer programmer</b> and <b>research enthusiast</b> with three years of overall technology experience and a passion for software development and Deep learning.
+    At <b>Amazon Payments</b> I have dedicated myself to developing customer centric and innovative payment experiences that combine cutting-edge technology with user-centric design.
+    Other than coding, I have a proven track record of Designing complex services and resilience engineering. 
+    Working at such a large scale at Amazon has taught me to make concious decisions as even a small change in the color of a button can affect Payment Conversions!
+</p> 
+
+export const HOME_INTRODUCTION_2 = `
+
+`
 
 export const HOME_TYPEWRITER_STRINGS = ["Software Engineer II","NLP Enthusiast", "FullStack Developer"]
 
@@ -64,4 +74,56 @@ export const certificates = [
         img_src:"coursera",
     }
 ]
+export const about_text = <p style={{ textAlign: "justify" }} className="home-text">
+    I am Aditya Dalvi from Bangalore, India. <br/>
+    I am currently working as a Software Development Engineer II
+    <br/>
+    <br/>
+    Apart from coding, some other things I love doing!
+    <ul>
+        <li>Trekking</li>
+        <li>Reading Books - <a href="https://www.goodreads.com/user/show/160395128-aditya-dalvi">Goodreads</a></li>
+        <li>Video Games</li>
+    </ul>
+
+</p>
+
+//Experience page
+// Card Data
+export const experience_data = [
+    {
+      title: "Jun 2023 - Present",
+      cardTitle: "Software Development Engineer 2",
+      cardSubtitle: "Amazon Pay | Selection and Influencing",
+      cardDetailedText:
+        "TBA",
+    },
+    {
+      title: "July 2021 - Jun 2023",
+      cardTitle: "Software Development Engineer 1",
+      cardSubtitle: "Amazon Pay | Selection and Influencing",
+      cardDetailedText:
+        `Implemented and launched the consent collection framework for token based card saving for Amazon India after RBI COF guidelines.
+        • Designed, implemented, and launched the expired token renewal framework for Amazon retail business.
+        • Successfully tokenized over 10 M cards and renewed 230k tokens to date.
+        • Active Amazon Interviewer`,
+    },
+    {
+      title: "April 2020 - Jun 2020",
+      cardTitle: "Software Development Intern",
+      cardSubtitle: "Amazon Pay | Cards Experience",
+      cardDetailedText:
+        "• Interned with the Cards Amazon Pay team to build a serverless application using AWS Lambda to toggle 3DS vs non‑3DS card transactions.",
+    },
+    {
+      title: "April 2019 -Jun 2019",
+      cardTitle: "Intern",
+      cardSubtitle: "Capgemini",
+      cardDetailedText:
+        "Interned at Capgemini under the Singapore‑Power project as a tester. Learnt and applied the fundamentals of testing using the SAP‑ISU and HP‑ALM environments",
+    },
+  ];
+
+// Footer Data
+export const fullName = "Aditya Dalvi"
 
