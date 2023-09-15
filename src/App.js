@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./style.css";
 import './App.css';
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
@@ -16,6 +16,7 @@ import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
 import Resume from "./components/Resume";
 import FooterBar from "./components/FooterBar";
+import GoodReads from "./components/About/GoodReads";
 
 function App() {
   <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'></link>
@@ -44,6 +45,7 @@ function App() {
           {/*This is a sample Tab. Other Tabs could go below this - Projects/Experience/Certifications/Contact/Blog etc*/}
           <Route path ="/experience" element={<Experience/>}/>
           <Route path ="/resume" element={<Resume/>}/>
+          <Route path ="/goodreads" element={<GoodReads/>}/>
         </Routes>
       </div>
       <FooterBar/>

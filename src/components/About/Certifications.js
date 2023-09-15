@@ -16,6 +16,9 @@ import {certificates} from "../../constants"
 function Certifications() {
     return(
         <div>
+          <h1 className="project-heading">
+          My <strong className="highlight"> Certifications</strong>
+        </h1>
 
     {/* https://swiperjs.com/swiper-api#param For Swiper Documentation*/}
     <Swiper

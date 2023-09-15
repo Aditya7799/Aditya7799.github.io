@@ -65,9 +65,8 @@ const iconContent = {
     logo:<SiPytorch/>,
     content:<p><h5 style={{textAlign:'center'}}>PyTorch</h5><hr/>
     <ul>
-     <li>Learnt in BTech. Extensively Experienced with Pytorch. </li>
-     <li>Many of my ML models are trained using PyTorch</li>
-     <li>PyTorch > Tensorflow</li>
+     <li>Extensively Experienced with Pytorch. </li>
+     <li>Many of my ML projects are trained using PyTorch</li>
    </ul>
          </p>
   },
@@ -96,9 +95,8 @@ const iconContent = {
     logo:<DiJava/>,
     content:<p><h5 style={{textAlign:'center'}}>Java</h5><hr/>
     <ul>
-     <li>Highly Experienced in Java. Have been using it since 2015</li>
+     <li>Proficiency - High </li>
      <li>Used @Amazon for SprintBoot Development</li>
-     <li>Beggeiner experience with Android App Dvelopment</li>
    </ul>
          </p>
   },
@@ -107,7 +105,7 @@ const iconContent = {
     logo:<DiScala/>,
     content:<p><h5 style={{textAlign:'center'}}>Scala</h5><hr/>
     <ul>
-     <li>Moderately Experienced with Scala.</li>
+     <li>Proficiency: High</li>
      <li>Used at Amazon to render the UI stack of the Payment Selection Page </li>
    </ul>
          </p>
@@ -117,7 +115,7 @@ const iconContent = {
     logo:<DiJavascript1/>,
     content:<p><h5 style={{textAlign:'center'}}>JavaScript</h5><hr/>
     <ul>
-    <li>Expert with JavaScript.</li>
+    <li>Proficiency: High</li>
      <li>Used at multiple places across my </li>
    </ul>
          </p>
@@ -127,7 +125,7 @@ const iconContent = {
     logo:<DiPython/>,
     content:<p><h5 style={{textAlign:'center'}}>Python</h5><hr/>
     <ul>
-     <li>Expert Python programmer</li>
+     <li>Proficiency: High</li>
      <li>Used it across my BTech projects</li>
    </ul>
          </p>
@@ -137,7 +135,8 @@ const iconContent = {
     logo:<BiLogoCPlusPlus/>,
     content:<p><h5 style={{textAlign:'center'}}>C++</h5><hr/>
     <ul>
-     <li>Moderately experienced with C++. Learnt it in highschool and BTech</li>
+     <li>Proficiency: Moderate. </li>
+     <li> Learnt it in highschool and BTech</li>
    </ul>
          </p>
   },
@@ -149,6 +148,9 @@ function TechStacks() {
     return(
       <div className="accordion">
       <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
+      <h1 className="project-heading">
+          My <strong className="highlight">Techstacks </strong>
+        </h1>
         <AccordionIcon title = {iconContent.springBoot.title} content={iconContent.springBoot.content} icon = {iconContent.springBoot.logo}/>
         <AccordionIcon title = "Title1" content={iconContent.aws.content} icon = {iconContent.aws.logo}/>
         <AccordionIcon title = "Title1" content={iconContent.react.content} icon = {iconContent.react.logo}/>

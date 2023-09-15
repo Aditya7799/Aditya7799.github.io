@@ -1,7 +1,7 @@
 .accordion {
     /* border: 1px solid #ccc; */
-    margin: 10px;
-    border-radius: 4px;
+    /* margin: 5px; */
+    /* border-radius: 4px; */
     overflow: hidden;
   }
   
@@ -23,7 +23,7 @@
   }
   
   .accordion-content {
-    padding: 10px;
+    /* padding: 10px; */
     font-size:medium;
     text-align: left;
     /* background-color: #fff; */

@@ -70,10 +70,6 @@ html {
     /* background-repeat: no-repeat; */
   }
 
-  /* .home-animation {
-    width: 100%;
-  } */
-
   .experience-icons {
     max-width:35px !important;
     max-height: 35px !important;
@@ -84,8 +80,11 @@ html {
 
   .experience-component {
     /* TODO : Actually center this div */
-    margin-top: 14%;
+    margin-top: 10%;
+  }
 
+  .timeline-card-content {
+    margin: 5%;
   }
 
   .avatar-img{
@@ -100,6 +99,14 @@ html {
       height: auto;
       border-radius: 50%;
     }
+  }
+
+  .highlight {
+    color: #ba30da;
+  }
+
+  .show-more {
+    color:#000000 !important;
   }
 
   /* Resume Section */
@@ -700,10 +707,10 @@ html {
   
   .tech-icons {
     font-size: 4.5em !important;
-    margin: 15px !important;
-    padding: 10px !important;
-    opacity: 0.93 !important;
-    border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+    margin: 10px !important;
+    /* padding: 10px !important; */
+    opacity: 1 !important;
+    border: 2.2px solid rgba(200, 137, 230, 0.637) !important;
     vertical-align: middle !important;
     text-align: center !important;
     border-radius: 5px !important;
@@ -720,7 +727,7 @@ html {
   }
   
   .tech-icons:hover {
-    transform: scale(1.05) !important;
+    transform: scale(1.1) !important;
     overflow: hidden !important;
     border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
   }

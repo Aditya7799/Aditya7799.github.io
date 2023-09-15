@@ -16,9 +16,9 @@ export const HOME_INTRODUCTION_1 = <p className="home-about-body">
     Working at such a large scale at Amazon has taught me to make concious decisions as even a small change in the color of a button can affect Payment Conversions!
 </p> 
 
-export const HOME_INTRODUCTION_2 = `
-
-`
+export const HOME_INTRODUCTION_2 = <p>
+    
+</p>
 
 export const HOME_TYPEWRITER_STRINGS = ["Software Engineer II","NLP Enthusiast", "FullStack Developer"]
 
@@ -75,17 +75,15 @@ export const certificates = [
     }
 ]
 export const about_text = <p style={{ textAlign: "justify" }} className="home-text">
-    I am Aditya Dalvi from Bangalore, India. <br/>
-    I am currently working as a Software Development Engineer II
+    I am Aditya Dalvi from Bangalore, India. I graduated from <b>National Institute of Technology, Karnataka</b> in 2021 and I am currently working as a Software Development Engineer II at Amazon. 
     <br/>
     <br/>
     Apart from coding, some other things I love doing!
     <ul>
         <li>Trekking</li>
-        <li>Reading Books - <a href="https://www.goodreads.com/user/show/160395128-aditya-dalvi">Goodreads</a></li>
+        <li>Reading Books - <a href="/#/goodreads">Goodreads</a> </li>
         <li>Video Games</li>
     </ul>
-
 </p>
 
 //Experience page
@@ -95,25 +93,42 @@ export const experience_data = [
       title: "Jun 2023 - Present",
       cardTitle: "Software Development Engineer 2",
       cardSubtitle: "Amazon Pay | Selection and Influencing",
-      cardDetailedText:
-        "TBA",
+      cardDetailedText:<p>
+        As an SDE2 at AmazonPay I have been responsible for a variety of things like designing and developing many critical payment-expereince features and maintaining the operational health of our service. 
+        <hr></hr>
+        Revamped the OrderSummary Experience on the PaymentSelectionPage for all Amazon India Customers.
+        <ul>
+            <li>Introduced a new feature where we dynamically calculate the OrderSummary for every change in PaymentMethod </li>
+            <li>Designed and Implemented this feature end-to-end. The proposed architecture reduced p90 latencies by 45%</li>
+        </ul>
+        <hr></hr>
+        Owned the resilience improvement track for a Tier1 service used to process payments across India.
+        <ul>
+            {/* <li></li> */}
+        </ul>
+        
+      </p>
     },
     {
       title: "July 2021 - Jun 2023",
       cardTitle: "Software Development Engineer 1",
       cardSubtitle: "Amazon Pay | Selection and Influencing",
-      cardDetailedText:
-        `Implemented and launched the consent collection framework for token based card saving for Amazon India after RBI COF guidelines.
-        • Designed, implemented, and launched the expired token renewal framework for Amazon retail business.
-        • Successfully tokenized over 10 M cards and renewed 230k tokens to date.
-        • Active Amazon Interviewer`,
+      cardDetailedText:<p>
+        Implemented and launched the consent collection framework for token based card saving for Amazon India after RBI COF guidelines.
+        <ul>
+            <li>Designed, implemented, and launched the expired token renewal framework for Amazon retail business.</li>
+            <li>Successfully tokenized over 10 M cards and renewed 230k tokens to date.</li>
+            <li> Active Amazon Interviewer</li>
+        </ul>
+      </p>
+        
     },
     {
       title: "April 2020 - Jun 2020",
       cardTitle: "Software Development Intern",
       cardSubtitle: "Amazon Pay | Cards Experience",
       cardDetailedText:
-        "• Interned with the Cards Amazon Pay team to build a serverless application using AWS Lambda to toggle 3DS vs non‑3DS card transactions.",
+        "Interned with the Cards Amazon Pay team to build a serverless application using AWS Lambda to toggle 3DS vs non‑3DS card transactions.",
     },
     {
       title: "April 2019 -Jun 2019",

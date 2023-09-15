@@ -4,6 +4,7 @@ $shooting-time: 7000ms;
 .night {
   // padding-top: 1000px;
   position: fixed;
+  pointer-events: none;
   width: 100%;
   height: 100%;
   transform: rotateZ(45deg);
