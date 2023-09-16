@@ -1,34 +1,62 @@
 import React, { useState, useEffect} from 'react';
 import { Document, Page, pdfjs } from 'react-pdf';
+import pdf from '../resume.pdf';
 
-// import samplePDF from '../Assets/resume.pdf';
-import samplePDF from '../resume.pdf';
+import { Container, Row } from "react-bootstrap";
+import Button from "react-bootstrap/Button";
+import { AiOutlineDownload } from "react-icons/ai";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-// pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
 export default function Test() {
-  const [numPages, setNumPages] = useState(null);
+  const [width, setWidth] = useState(1200);
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, []);
 
-  function onDocumentLoadSuccess({ numPages }) {
-    setNumPages(numPages);
-  }
-
-  useEffect(() => { pdfjs.GlobalWorkerOptions.workerSrc = `https://cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;});
-  const pageNumber = 1;
   return (
     <div className='resume ResumeContainer'>
-        <Document className="PDFDocument" file={samplePDF} onLoadSuccess={onDocumentLoadSuccess}>
-      {/* {Array.from(
-        new Array(numPages),
-        (el, index) => (
-          <Page
-            key={`page_${index + 1}`}
-            pageNumber={index + 1}
-          />
-        ),
-      )} */}
-      <Page className={"PDFPage PDFPageOne"} pageNumber={pageNumber} renderTextLayer={false} renderInteractiveForms={false} />
-      <Page className={"PDFPage"} pageNumber={pageNumber + 1} renderTextLayer={false} renderInteractiveForms={false} />
-    </Document>
+      <Container fluid>
+        <Row style={{ justifyContent: "center", position: "relative" }}>
+          <Button
+            variant="primary"
+            href={pdf}
+            target="_blank"
+            style={{ maxWidth: "250px" }}
+          >
+            <AiOutlineDownload />
+            &nbsp;Download CV
+          </Button>
+        </Row>
+
+        <Row className="resume">
+          <Document file={pdf} className="d-flex justify-content-center">
+            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} 
+            renderTextLayer={false}
+            renderAnnotationLayer={false}
+            customTextRenderer={false}/>
+          </Document>
+
+          <Document file={pdf} className="d-flex justify-content-center">
+            <Page pageNumber={2} scale={width > 786 ? 1.7 : 0.6} 
+            renderTextLayer={false}
+            renderAnnotationLayer={false}
+            customTextRenderer={false}/>
+          </Document>
+        </Row>
+
+        <Row style={{ justifyContent: "center", position: "relative" }}>
+          <Button
+            variant="primary"
+            href={pdf}
+            target="_blank"
+            style={{ maxWidth: "250px" }}
+          >
+            <AiOutlineDownload />
+            &nbsp;Download CV
+          </Button>
+        </Row>
+      </Container>
     </div>
     
   );
