@@ -88,12 +88,32 @@ export const about_text = <p style={{ textAlign: "justify" }} className="home-te
 
 //Experience page
 // Card Data
-export const experience_data = [
+export const education_data = [
+    {
+      title: "July 2017 - May 2021",
+      cardTitle: "National Institute of Technology, Karnataka",
+      cardSubtitle: "B.Tech Information Technology",
+      cardDetailedText:<p style={{fontSize:"1.2rem"}}>
+        CGPA - 8.7/10.0
+      </p>
+    },
+    {
+      title: "July 2015 - May 2017",
+      cardTitle: "RV PU College, Bangalore",
+      cardSubtitle: "Class XII (Senior Secondary Examination)",
+      cardDetailedText:<p>
+            Aggregate - 94.2%
+      </p>
+        
+    },
+  ];
+
+  export const experience_data = [
     {
       title: "Jun 2023 - Present",
       cardTitle: "Software Development Engineer 2",
       cardSubtitle: "Amazon Pay | Selection and Influencing",
-      cardDetailedText:<p>
+      cardDetailedText:<p style={{fontSize:"1.1rem"}}>
         As an SDE2 at AmazonPay I have been responsible for a variety of things like designing and developing many critical payment-expereince features and maintaining the operational health of our service. 
         <hr></hr>
         Revamped the OrderSummary Experience on the PaymentSelectionPage for all Amazon India Customers.
@@ -113,7 +133,7 @@ export const experience_data = [
       title: "July 2021 - Jun 2023",
       cardTitle: "Software Development Engineer 1",
       cardSubtitle: "Amazon Pay | Selection and Influencing",
-      cardDetailedText:<p>
+      cardDetailedText:<p style={{fontSize:"1.1rem"}}>
         Implemented and launched the consent collection framework for token based card saving for Amazon India after RBI COF guidelines.
         <ul>
             <li>Designed, implemented, and launched the expired token renewal framework for Amazon retail business.</li>
@@ -127,15 +147,17 @@ export const experience_data = [
       title: "April 2020 - Jun 2020",
       cardTitle: "Software Development Intern",
       cardSubtitle: "Amazon Pay | Cards Experience",
-      cardDetailedText:
-        "Interned with the Cards Amazon Pay team to build a serverless application using AWS Lambda to toggle 3DS vs non‑3DS card transactions.",
+      cardDetailedText:<p style={{fontSize:"1.1rem"}}>
+        Interned with the Cards Amazon Pay team to build a serverless application using AWS Lambda to toggle 3DS vs non‑3DS card transactions.
+      </p>
     },
     {
       title: "April 2019 -Jun 2019",
       cardTitle: "Intern",
       cardSubtitle: "Capgemini",
-      cardDetailedText:
-        "Interned at Capgemini under the Singapore‑Power project as a tester. Learnt and applied the fundamentals of testing using the SAP‑ISU and HP‑ALM environments",
+      cardDetailedText:<p style={{fontSize:"1.1rem"}}>
+        Interned at Capgemini under the Singapore‑Power project as a tester. Learnt and applied the fundamentals of testing using the SAP‑ISU and HP‑ALM environments
+      </p>
     },
   ];
 
