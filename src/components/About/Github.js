@@ -17,11 +17,6 @@ function Github() {
         fontSize={16}
       />
     </Row>
-
-      <div align="center" style={{paddingTop:"5%"}}>
-        <img style={{paddingRight:"5%"}} src="https://github-readme-stats.anuraghazra1.vercel.app/api?username=Aditya7799&show_icons=true" />
-        <img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=Aditya7799&" alt="adidalvi" />
-      </div>
     </div>
   );
 }

@@ -28,18 +28,10 @@ function About() {
               About <strong className="highlight">Me</strong>
             </h1>
             {about_text}
-            <div>
-            {/* <GitHub username="Aditya7799" /> */}
+            <div style={{textAlign:"left"}}>
+              <img width="50%" src="https://leetcode-stats.vercel.app/api?username=adi73365&theme=Dark"/>
+              <img width="50%" src="https://github-readme-streak-stats.herokuapp.com/?user=Aditya7799&theme=dark" alt="adidalvi" />
 
-            {/* <LinkedIn username="nateshmbhat" organization="Google" role="Developer" /> */}
-
-            {/* <HackerRank username="nateshmbhat1" rank={4900} category="Algorithm Practice"
-                competitions="13"
-                contestRating="1500"
-                gold="1"
-                silver="2"
-                bronze="3"
-            /> */}
             </div>
             
 
